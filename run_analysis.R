@@ -265,3 +265,5 @@ newdat <- dt[,list(Avg_tBodyAcc_mean_X = mean(V1) ,
 	by=c("activity","subject")]
 	
 head(newdat)
+
+write.csv(newdat, paste(directory, "/new_dat.csv",sep=""))
