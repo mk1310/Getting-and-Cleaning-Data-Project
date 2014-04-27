@@ -1,4 +1,5 @@
-run_analysis <- function(directory) {
+##Provide the directory location for main folder under which test and train data folders are located
+directory <- "D:/csra/getting&cleaningdata/assign/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset"
 
 ## Read traing data files
 
@@ -263,5 +264,4 @@ newdat <- dt[,list(Avg_tBodyAcc_mean_X = mean(V1) ,
 		Avg_fBodyBodyGyroJerkMag_std = mean(V543) ) ,
 	by=c("activity","subject")]
 	
-	
-}
+head(newdat)
