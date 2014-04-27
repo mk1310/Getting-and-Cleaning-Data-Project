@@ -9,5 +9,5 @@
 ###Following are the main steps
 ####Change the location of the directory variable 
 ####Then run the code below it without editing anything
-####Code will create the tidy dataset called "newdat" and will export the same in the parent folder as "newdat.csv"
+####Code will create the tidy dataset called "newdat" and will export the same as a tab delimited text file in the parent folder as "newdat.txt"
 
