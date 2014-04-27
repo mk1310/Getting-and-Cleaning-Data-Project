@@ -267,4 +267,4 @@ newdat <- dt[,list(Avg_tBodyAcc_mean_X = mean(V1) ,
 head(newdat)
 
 newdat = as.data.frame.matrix(newdat) 
-write.csv(newdat, paste(directory, "/newdat.csv",sep=""),row.names = FALSE)
+write.table(newdat, paste(directory, "/newdat.txt",sep=""), sep="\t" ,row.names = FALSE)
